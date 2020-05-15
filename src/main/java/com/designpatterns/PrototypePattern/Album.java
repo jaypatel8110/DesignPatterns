@@ -1,4 +1,4 @@
-package PrototypePattern;
+package com.designpatterns.PrototypePattern;
 
 public class Album implements PrototypeCapable {
 
