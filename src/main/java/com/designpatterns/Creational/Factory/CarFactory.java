@@ -1,4 +1,4 @@
-package com.designpatterns.Factory;
+package com.designpatterns.Creational.Factory;
 
 public class CarFactory {
     public static Car BuildCar(CarType model){

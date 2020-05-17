@@ -1,4 +1,4 @@
-package com.designpatterns.Factory;
+package com.designpatterns.Creational.Factory;
 
 public abstract class Car {
     private CarType model = null;

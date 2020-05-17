@@ -1,4 +1,4 @@
-package com.designpatterns.PrototypePattern;
+package com.designpatterns.Creational.PrototypePattern;
 
 public class TestPrototypePattern {
 

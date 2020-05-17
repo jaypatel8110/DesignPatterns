@@ -1,4 +1,4 @@
-package com.designpatterns.Builder;
+package com.designpatterns.Creational.Builder;
 
 public class CallBuilder {
 

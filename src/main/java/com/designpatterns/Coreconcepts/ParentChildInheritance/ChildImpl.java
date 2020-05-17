@@ -12,7 +12,7 @@ public class ChildImpl implements ParentInterface {
 
     }
 
-    public void childImpl(){
+    public void getChildImpl(){
         System.out.println(" Child Method");
 
     }

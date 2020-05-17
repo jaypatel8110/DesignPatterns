@@ -15,5 +15,6 @@ public class Test {
         ParentInterface pi=new ChildImpl();
         pi.getMiddle();
         pi.getName();
+
     }
 }
