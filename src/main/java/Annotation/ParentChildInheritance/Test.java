@@ -1,4 +1,4 @@
-package com.designpatterns.Coreconcepts.ParentChildInheritance;
+package Annotation.ParentChildInheritance;
 //https://stackoverflow.com/questions/12159601/why-do-we-assign-a-parent-reference-to-the-child-object-in-java
 
 public class Test {

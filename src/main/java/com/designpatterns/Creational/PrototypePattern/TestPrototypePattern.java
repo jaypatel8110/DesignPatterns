@@ -1,5 +1,8 @@
 package com.designpatterns.Creational.PrototypePattern;
 
+import java.util.Comparator;
+import java.util.function.Function;
+
 public class TestPrototypePattern {
 
     public static void main(String[] args)
@@ -14,6 +17,7 @@ public class TestPrototypePattern {
 
             String showPrototype  = PrototypeFactory.getInstance(Names.SHOW.getvalue()).toString();
             System.out.println(showPrototype);
+            Comparator<Show> s = (o1, o2) -> Integer.parseInt("sd");
 
         }
         catch (CloneNotSupportedException e)

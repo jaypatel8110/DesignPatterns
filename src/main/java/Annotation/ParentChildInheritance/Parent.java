@@ -1,4 +1,4 @@
-package com.designpatterns.Coreconcepts.ParentChildInheritance;
+package Annotation.ParentChildInheritance;
 
 public class Parent {
 
