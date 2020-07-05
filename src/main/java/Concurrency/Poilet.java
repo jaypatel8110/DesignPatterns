@@ -1,5 +1,6 @@
 package Concurrency;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -10,9 +11,9 @@ public class Poilet {
 
 
     public static void main(String[] args) {
-    Executor executor= Executors.newSingleThreadExecutor();
+    /*Executor executor= Executors.newSingleThreadExecutor();
     Runnable task= () -> System.out.println("sd");
-    executor.execute(task);
+    executor.execute(task);*/
 
     int[] number ={1,9,4,2,1,4,5};
         IntStream.of(number)
@@ -30,6 +31,13 @@ public class Poilet {
                 .sorted()
                 .peek(System.out::println)
                 .forEach(System.out::println);
+
+        SecurityManager securityMgr = System.getSecurityManager();
+        if (securityMgr == null) {
+            System.out.println("Security manager is not installed");
+        }
+
+        ArrayList<?> a= new ArrayList<>();
 
     }
 }
