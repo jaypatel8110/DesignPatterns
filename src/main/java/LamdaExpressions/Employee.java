@@ -1,6 +1,6 @@
 package LamdaExpressions;
 
-
+import java.util.Comparator;
 
 public class Employee {
 
@@ -38,9 +38,10 @@ public class Employee {
 }
 
 @FunctionalInterface
-interface EmpUtil{
-    Object appendname(int age,String name);
+interface EmpUtil<T>{
+    T appendname(int age,String name);
 }
+
 
 class Test{
 
@@ -53,9 +54,15 @@ class Test{
 
         Test t= new Test();
 
+
         EmpUtil empobj=(age,name)-> new Employee(age,name);
 
          System.out.println("Proved this can be called directly "  +  empobj.appendname(20,"Patel"));
+
+         Employee e= (Employee) empobj.appendname(20,"Patel");
+
+        System.out.println("Printing name "  + e.getName());
+
 
          t.nameTest((Employee) empobj.appendname(20,"jay"));
 
