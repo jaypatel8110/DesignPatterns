@@ -16,6 +16,8 @@ public class TestAll {
       System.out.println("Function Example " + name);
   };
 
+
+
     public static Supplier<String> supplierExamplE() {
         return () -> "Jay";
     }
