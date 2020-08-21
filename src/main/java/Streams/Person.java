@@ -22,6 +22,8 @@ public class Person {
         this.dob = dob;
         this.income = income;
     }
+    public Person(){
+    }
 
     public long getId() {
         return id;

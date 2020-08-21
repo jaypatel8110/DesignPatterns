@@ -2,6 +2,7 @@ package Streams;
 
 import java.time.Month;
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -35,29 +36,28 @@ public class TestAll {
                 .count();
     }
 
-     static void testingReduce() {
+    static void testingReduce() {
 
         Optional<Person> person = Person.persons()
                 .stream()
-                .reduce((person1, person2) -> person1.getIncome()>person2.getIncome()?person1:person2);
-         if (person.isPresent()) {
-             System.out.println("Highest earner: " + person.get());
-         }
-         else {
-             System.out.println("Could not get the highest earner.");
-         }
+                .reduce((person1, person2) -> person1.getIncome() > person2.getIncome() ? person1 : person2);
+        if (person.isPresent()) {
+            System.out.println("Highest earner: " + person.get());
+        } else {
+            System.out.println("Could not get the highest earner.");
+        }
 
     }
 
 
-    static void testSummary(){
+    static void testSummary() {
         DoubleSummaryStatistics incomeStats =
                 Person.persons()
                         .stream()
                         .collect(Collectors.summarizingDouble(Person::getIncome));
     }
 
-    static void testCollectrs(){
+    static void testCollectrs() {
 
         Map<Person.Gender, Map<Month, String>> personsByGenderAndDobMonth
                 = Person.persons()
@@ -71,8 +71,23 @@ public class TestAll {
 
     public static void main(String[] args) {
         //init();
-       //testingReduce();
-    testCollectrs();
+        //testingReduce();
+        //testCollectrs();
 
+        testConsumer();
+
+    }
+
+    private static void testConsumer() {
+
+        Consumer<String> c1 = s -> System.out.println("C1" + s);
+        Consumer<String> c2 = new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                System.out.println("C2" + s);
+            }
+        };
+        Consumer<String> c3 = c1.andThen(c2);
+        c3.accept(" Jay");
     }
 }
