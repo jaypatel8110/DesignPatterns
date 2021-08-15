@@ -21,6 +21,8 @@ public class GreetClient {
         out.println(msg);
         String resp = in.readLine();
         return resp;
+
+
     }
 
     public void stopConnection() throws IOException {
