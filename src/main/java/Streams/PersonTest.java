@@ -1,6 +1,5 @@
 package Streams;
 
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

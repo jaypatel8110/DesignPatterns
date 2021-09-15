@@ -1,6 +1,10 @@
 package LamdaExpressions;
 
+import javax.swing.text.html.Option;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 
 public class Employee {
 
@@ -52,19 +56,36 @@ class Test{
 
     public static void main(String[] args) {
 
-        Test t= new Test();
+//        Test t= new Test();
+//        EmpUtil empobj=(age,name)-> new Employee(age,name);
+//
+//         System.out.println("Proved this can be called directly "  +  empobj.appendname(20,"Patel"));
+//
+//         Employee e= (Employee) empobj.appendname(20,"Patel");
+//
+//        System.out.println("Printing name "  + e.getName());
+//
+//
+//        t.nameTest((Employee) empobj.appendname(20,"jay"));
 
+        
+        List<Employee> employeeList = null;
+       // List<Employee> employeeList = new ArrayList<>();
+//        employeeList.add(new Employee(27,"Prerna"));
+//        employeeList.add(new Employee(27,"Jay"));
+//        employeeList.add(new Employee(27,"Prerna Jay"));
 
-        EmpUtil empobj=(age,name)-> new Employee(age,name);
+        if (employListNotNullAndNotEmpty(employeeList)){
+            System.out.println("In the looop");
+        }else {
+            System.out.println("In the ELSE looop");
+        }
 
-         System.out.println("Proved this can be called directly "  +  empobj.appendname(20,"Patel"));
+    }
 
-         Employee e= (Employee) empobj.appendname(20,"Patel");
-
-        System.out.println("Printing name "  + e.getName());
-
-
-         t.nameTest((Employee) empobj.appendname(20,"jay"));
-
+    public static boolean employListNotNullAndNotEmpty(List<Employee> employeeList) {
+        return Optional.ofNullable(employeeList)
+                .stream().count()>0
+                ;
     }
 }
