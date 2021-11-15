@@ -19,9 +19,11 @@ public class MyEqualsMethod {
     @Override
     public boolean equals(Object o) {
     if (this==o) return true;
+
     if (o==null || o.getClass()!=this.getClass()){
         return false;
     }
+
     MyEqualsMethod myEqualsMethod= (MyEqualsMethod) o;
 
     return id== myEqualsMethod.id &&
