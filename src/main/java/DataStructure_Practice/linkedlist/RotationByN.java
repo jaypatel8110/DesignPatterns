@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package DataStructure_Practice.array;
+package DataStructure_Practice.linkedlist;
 
 /**
  *

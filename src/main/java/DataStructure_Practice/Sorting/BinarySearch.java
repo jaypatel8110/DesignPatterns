@@ -29,22 +29,19 @@ public class BinarySearch {
         }
         return -1;
     }
-public static void main(String args[])
-{
+public static void main(String args[]){
+
     BinarySearch s=new BinarySearch();
     int arr[]={2,3,4,10,40};
     int n=arr.length;
     int key=10;
     int result=s.search(arr,0,n-1,key);
-    if(result==-1)
-    {
+    if(result==-1){
+
         System.out.println("No match found");
-    }
-    else
-    {
+    }else{
      System.out.println("Found at postion "+result );   
     }
-    
 }
 
 }
