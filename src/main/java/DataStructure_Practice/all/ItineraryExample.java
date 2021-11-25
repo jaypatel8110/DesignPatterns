@@ -1,8 +1,7 @@
 package DataStructure_Practice.all;
 
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class ItineraryExample {
     // https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
@@ -52,6 +51,19 @@ public class ItineraryExample {
         dataSet.put("Bombay", "Delhi");
         dataSet.put("Goa", "Chennai");
         dataSet.put("Delhi", "Goa");
+
+        List<String> fromList = Arrays.asList("Chennai,Bombay,Goa,Delhi".split(","));
+        List<String> toList = Arrays.asList("Banglore,Delhi,Chennai,Goa".split(","));
+        Map<String, String> map = new HashMap<String, String>();
+
+//        for (int i=0; i<fromList.size(); i++) {
+//            map.put(fromList.get(i), toList.get(i));
+//        }
+//
+//
+//        System.out.println(map);
+
+
 
         System.out.println("Original");
         for (Map.Entry<String, String> entry : dataSet.entrySet())
