@@ -14,7 +14,7 @@ public class TestCustomException1 {
         try {
             validate(14);
         }catch (Exception e){
-            System.out.println("Exception occured: "+e);
+            System.out.println("Exception occurred: "+e);
         }finally {
             System.out.println("After code over");
         }

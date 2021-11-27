@@ -16,7 +16,7 @@ public class MediatorDesignPatternRun {
         flightOne.getReadyToLand();
         mainRunway.land();
         flightOne.land();
-        flightTwo.land();
+       // flightTwo.land();
         flightOne.parked();
 
     }

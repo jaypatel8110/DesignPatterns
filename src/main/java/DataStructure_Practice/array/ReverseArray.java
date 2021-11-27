@@ -6,8 +6,12 @@
 
 package DataStructure_Practice.array;
 
+import java.util.Arrays;
+
 /**
  * @author JAY PATEL
+ * Time Complexity : O(n)
+ * https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/
  */
 public class ReverseArray {
 
@@ -26,11 +30,24 @@ public class ReverseArray {
         if (low >= high) {
             return;
         }
-
         arr[low] = arr[high];
         arr[high] = temp;
         reverse(arr, low + 1, high - 1);
     }
+
+    /* Function to reverse arr[] from
+        start to end*/
+//    static void rvereseArrayWithWhile(int[] arr, int start, int end) {
+//        int temp;
+//
+//        while (start < end) {
+//            temp = arr[start];
+//            arr[start] = arr[end];
+//            arr[end] = temp;
+//            start++;
+//            end--;
+//        }
+//    }
 
     public static void main(String[] args) {
 
@@ -41,8 +58,6 @@ public class ReverseArray {
         System.out.println("After reversing");
         reverse(arr, 0, n - 1);
         print(arr);
-
-
     }
 
 }
