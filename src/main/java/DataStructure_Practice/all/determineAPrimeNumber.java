@@ -54,6 +54,6 @@ public class determineAPrimeNumber {
 //        else
 //            System.out.println(" false");
 
-        System.out.println(isPrimeMethod2(17).toString());
+        System.out.println(isPrimeMethod2(19).toString());
     }
 }

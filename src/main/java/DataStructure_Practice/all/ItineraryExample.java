@@ -5,6 +5,7 @@ import java.util.*;
 
 public class ItineraryExample {
     // https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
+    //O(n)
 
     private static void printResult(Map<String, String> dataSet) {
 
@@ -63,12 +64,9 @@ public class ItineraryExample {
 //
 //        System.out.println(map);
 
-
-
         System.out.println("Original");
         for (Map.Entry<String, String> entry : dataSet.entrySet())
             System.out.print(entry.getKey() + "-->" + entry.getValue()+ ",");
-
 
         printResult(dataSet);
     }
