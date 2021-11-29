@@ -25,6 +25,8 @@ public class determineAPrimeNumber {
     }
 
     static Boolean isPrimeMethod2(int num){
+        if(num<2)
+            return false;
        int i = 2;
        boolean flag = true;
         while (i <= num / 2) {
@@ -54,6 +56,6 @@ public class determineAPrimeNumber {
 //        else
 //            System.out.println(" false");
 
-        System.out.println(isPrimeMethod2(19).toString());
+        System.out.println(isPrimeMethod2(-1).toString());
     }
 }

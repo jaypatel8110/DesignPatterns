@@ -1,4 +1,4 @@
-package OverrideCoreObjectMethods.hashMap;
+package OverrideCoreObjectMethods.hashtable;
 
 public class HashNode<K, V> {
 

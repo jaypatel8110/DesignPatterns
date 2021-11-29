@@ -1,4 +1,4 @@
-package OverrideCoreObjectMethods.hashMap;
+package OverrideCoreObjectMethods.hashtable;
 
 import java.util.ArrayList;
 import java.util.Objects;
