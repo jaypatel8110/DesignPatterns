@@ -54,7 +54,7 @@ public class CustomHashMap<K, V> {
      */
     public void put(K newKey, V data) {
         if (newKey == null)
-            return;    //does not allow to store null.
+            return;    //does not allow storing null.
 
         //calculate hash of key.
         int hash = hash(newKey);
